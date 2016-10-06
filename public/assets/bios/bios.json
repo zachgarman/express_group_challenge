@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Andy Wolff",
+    "id": "Andy",
+    "pic": "Andy.jpg",
+    "bio": "A ruggedly handsome and dashing archeologist in his early twenties. Andy became disillusioned with the constant threat of adventure and daring do. He humbly put away his whip on a whim while visiting a map to a squalid and abandoned border town. He's been wandering aimlessly ever since, looking for a home. He found that home, amongst a room of nerds."
+  },
+  {
+    "name": "Paul Katchmark",
+    "id": "Paul",
+    "pic": "Paul.jpg",
+    "bio": "Paul likes long walks on the beach on starry nights with a gentle breeze."
+  },
+  {
+    "name": "Zach Garman",
+    "id": "Zach",
+    "pic": "Zach.jpg",
+    "bio": "Zach was sent back in time to stop a future apocalypse of machines trying to destroy humankind."
+  }
+]

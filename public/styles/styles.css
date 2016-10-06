@@ -1,0 +1,13 @@
+img {
+  height: 200px;
+  width: auto;
+}
+main {
+  display: inline;
+}
+.profile {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 10px 4px 0 4px;
+}
