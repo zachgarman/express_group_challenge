@@ -18,11 +18,9 @@ $(function () {
 
 //get bios, pics, names and run once on page load
 function getBios () {
-  console.log("it worked!");
   $.ajax({
     type: 'GET',
     url: '/bios',
-
     success: function(people) {
       people.forEach(function(person) {
         var $profile = $('<div></div>');
@@ -39,19 +37,15 @@ function getBios () {
     }
   });
 }
-//get total likes and append DOM, run on click to likes;
+//get total likes and append DOM, run on click to likes and at page open
 function getLikes() {
   $.ajax({
     type: 'GET',
     url: '/likes',
-
     success: function (peopleLikes) {
-
       for (var key in peopleLikes) {
-        console.log('key: ', key);
-        console.log('peopleLikes.key: ', peopleLikes[key]);
-        // $('#' + key).children().children('h4').remove();
-        // $('#' + key).children().append('<h4>Total Likes: ' + peopleLikes.key + '</h4>')
+        $('#' + key).children().children('h4').remove();
+        $('#' + key).children().append('<h4>Total Likes: ' + peopleLikes[key] + '</h4>')
       }
     }
   });
