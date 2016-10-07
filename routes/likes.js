@@ -11,8 +11,14 @@ var likes = {
 }
 
 //post to /likes/name
+//could use:
+//  router.post('/:name', function(req, res) {
+//    likes[req.params.name]++;       // will work for any name.
+//    res.sendStatus(200);            // or 
+//  });
+
 router.post('/Andy', function (req, res) {
-  likes.Andy++;  
+  likes.Andy++;
   res.send(likes);
 });
 router.post('/Paul', function (req, res) {
