@@ -12,7 +12,7 @@ var likes = {
 
 //post to /likes/name
 router.post('/Andy', function (req, res) {
-  likes.Andy++;
+  likes.Andy++;  
   res.send(likes);
 });
 router.post('/Paul', function (req, res) {
