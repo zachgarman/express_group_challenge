@@ -1,7 +1,6 @@
 $(function () {
   //append dom with initial get call for bios and likes
   getBios();
-  getLikes();
 
   $('.profile').on('click', 'button', function () {
     var $name = $(this).attr('class');
@@ -33,6 +32,7 @@ function getBios () {
         $profile.append($button);
         //$profile.append('<p>Total Likes: <span id="likes' + $id + '">0</span> </p>');
         $('#' + $id).append($profile);
+        getLikes();
       });
     }
   });
